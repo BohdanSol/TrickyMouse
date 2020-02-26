@@ -19,6 +19,10 @@ document.addEventListener('mousemove', (e) => {
 });
 function blink(x, y) {
 	images[index].classList.toggle('anim');
+	setTimeout(() => {
+		images[index].classList.remove('anim');
+		images[index].offsetWidth = images[index].offsetWidth;
+	}, 2001);
 	console.log(index);
 	index++;
 	if (index == 7) {
