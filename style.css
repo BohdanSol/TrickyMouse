@@ -30,13 +30,13 @@ body {
 	height: 12px;
 	width: 12px;
 	background-color: #fff;
-	transition: .15s;
+	transition: .1s;
 	border-radius: 6px;
 	pointer-events: none;
 }
 #images {
 	position: absolute;
-	transition: .15s;
+	transition: .3s;
 }
 #images img {
 	position: absolute;
@@ -53,19 +53,19 @@ body {
 	opacity: 0;
 }
 .anim {
-	opacity: 1;
+	display: block;
 	animation: popup 2s;
 }
 @keyframes popup {
 	0% {
-		/* margin-top: 100px; */
-		/* margin-left: 175px; */
-		transform: scale(0.1);
+		/* margin-top: 100px;
+		margin-left: 175px; */
+		transform: scale(0);
 	}
 	35% {
-		transform: scale(1);
+		opacity: 1;
 	}
-	50% {
+	40% {
 		transform: scale(1);
 		opacity: 1;
 	}

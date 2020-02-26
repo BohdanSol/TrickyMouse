@@ -7,7 +7,7 @@ var index = 0;
 document.addEventListener('mousemove', (e) => {
 	let x = e.clientX;
 	let y = e.clientY;
-	if (Math.abs(lastX - x) > 100 || Math.abs(lastY - y) > 100) {
+	if (Math.abs(lastX - x) > 170 || Math.abs(lastY - y) > 150) {
 		blink(x, y);
 		lastX = x;
 		lastY = y;
@@ -18,9 +18,9 @@ document.addEventListener('mousemove', (e) => {
 	cursorFollowingImg.style.top = y - 100 + 'px';
 });
 function blink(x, y) {
-	images[index].style.left = x - 175 + 'px';
-	images[index].style.top = y - 100 + 'px';
 	images[index].classList.toggle('anim');
+	cursorFollowingImg.style.left = x - 175 + 'px';
+	cursorFollowingImg.style.top = y - 100 + 'px';
 	console.log(index);
 	index++;
 	if (index == 7) {
