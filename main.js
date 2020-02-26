@@ -19,8 +19,6 @@ document.addEventListener('mousemove', (e) => {
 });
 function blink(x, y) {
 	images[index].classList.toggle('anim');
-	cursorFollowingImg.style.left = x - 175 + 'px';
-	cursorFollowingImg.style.top = y - 100 + 'px';
 	console.log(index);
 	index++;
 	if (index == 7) {
