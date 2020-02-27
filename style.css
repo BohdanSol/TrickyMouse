@@ -35,7 +35,7 @@ body {
 	pointer-events: none;
 }
 #images {
-	position: absolute;
+	/* position: absolute; */
 	transition: .1s;
 }
 #images img {
@@ -54,7 +54,7 @@ body {
 }
 .anim {
 	display: block;
-	animation: popup 2s;
+	animation: popup 1.5s;
 }
 @keyframes popup {
 	0% {
@@ -69,9 +69,11 @@ body {
 		transform: scale(1);
 		opacity: 1;
 	}
+	90% {
+		opacity: 0;
+	}
 	100% {
 		transform: translate(0, 100vh);
-		opacity: 0;
 	}
 }
 @media only screen and (max-width: 600px) {
